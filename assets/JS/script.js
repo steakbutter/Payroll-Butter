@@ -14,10 +14,11 @@ while (keepAdding) {
 
   let addEmployeesBtn = window.prompt("Enter First Name");
   window.prompt ("Enter Last Name");
-  window.prompt ("Enter Salary");
- if (!addEmployeesBtn) {
-  return;
- }
+  //window.prompt ("Enter Salary");
+
+  if(!addEmployeesBtn){
+    return;
+  }
 }
  
 }
