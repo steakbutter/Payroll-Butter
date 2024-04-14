@@ -14,7 +14,9 @@ while (keepAdding) {
 
   let addEmployeesBtn = window.prompt("Enter First Name");
   window.prompt ("Enter Last Name");
-  //window.prompt ("Enter Salary");
+  window.prompt ("Enter Salary");
+  keepAdding = window.confirm ('Do you want to add another employee?');
+
 
   if(!addEmployeesBtn){
     return;
