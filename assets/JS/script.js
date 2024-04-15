@@ -19,7 +19,9 @@ while (keepAdding === true) {
     lastName: lastName,
     salary: parseFloat(salary),
   };
-  
+// Used the push method to add the employee information from the user input to the employees array created at the start
+  employees.push(employee);
+
   keepAdding = window.confirm ('Do you want to add another employee?');
 
   if (keepAdding != true) {
