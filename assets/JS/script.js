@@ -39,6 +39,13 @@ while (keepAdding === true) {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+let totalSalary = 0;
+for (let i = 0; i < employeesArray.length; i++) {
+totalSalary += employeesArray [i];
+}
+let avgSalary = totalSalary / employeesArray.length;
+
+  console.log (`The average employee salary between our ${employeesArray.length} is ${avgSalary} `);
   
 }
 
