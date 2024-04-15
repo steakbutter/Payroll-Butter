@@ -14,6 +14,12 @@ while (keepAdding === true) {
   if (isNaN(salary)) {
     window.alert('Not a number');
   }
+  const employee = {
+    firstName: firstName,
+    lastName: lastName,
+    salary: parseFloat(salary),
+  };
+  
   keepAdding = window.confirm ('Do you want to add another employee?');
 
   if (keepAdding != true) {
