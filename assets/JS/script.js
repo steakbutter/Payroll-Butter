@@ -6,6 +6,7 @@ const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
 const employees = [];
 
+// Created variable 'keepAdding' to true so we can execute the while loop over and over again until the user wants to stop adding employees.
  let keepAdding = true;
 while (keepAdding === true) {
   const firstName = window.prompt ("Enter First Name"); 
@@ -14,6 +15,7 @@ while (keepAdding === true) {
   if (isNaN(salary)) {
     window.alert('Not a number');
   }
+  // Created employee object to fill employees data with the users input above
   const employee = {
     firstName: firstName,
     lastName: lastName,
@@ -22,17 +24,23 @@ while (keepAdding === true) {
 // Used the push method to add the employee information from the user input to the employees array created at the start
   employees.push(employee);
 
+// Added the window confirm to the keepAdding variable to continue loop or return the gathered information by the user.
   keepAdding = window.confirm ('Do you want to add another employee?');
-
   if (keepAdding != true) {
-    return {firstName, lastName, salary};
+
+    return employees;
+  }
+
+
+  // if (keepAdding != true) {
+  //   return {firstName, lastName, salary};
   }
 
 
 
 }
  
-}
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
