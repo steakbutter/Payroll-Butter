@@ -17,7 +17,7 @@ while (keepAdding === true) {
   keepAdding = window.confirm ('Do you want to add another employee?');
 
   if (keepAdding != true) {
-    return;
+    return {firstName, lastName, salary};
   }
 
 
