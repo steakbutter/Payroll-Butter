@@ -31,20 +31,19 @@ while (keepAdding === true) {
     return employees;
   }
 
-
-  // if (keepAdding != true) {
-  //   return {firstName, lastName, salary};
   }
-
-
 
 }
  
 
-
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  let salaryTotal = 0;
+  for (let i = 0; i < employees.length; i++) {
+    salaryTotal += employees.length[i];
+  }
+  
 }
 
 // Select a random employee
