@@ -2,9 +2,9 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
+const employees = [];
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-const employees = [];
 
 // Created variable 'keepAdding' to true so we can execute the while loop over and over again until the user wants to stop adding employees.
  let keepAdding = true;
@@ -43,8 +43,8 @@ const displayAverageSalary = function(employeesArray) {
   for (let i = 0; i < employees.length; i++) {
     salaryTotal += employees.length[i];
   }
-  let salaryAvg = salaryTotal / employees.length
-  console.log (salaryAvg)
+  let salaryAvg = salaryTotal / employees.length;
+  console.log (salaryAvg);
 }
 
 // Select a random employee
