@@ -45,15 +45,18 @@ totalSalary += employeesArray [i];
 }
 let avgSalary = totalSalary / employeesArray.length;
 
-  console.log (`The average employee salary between our ${employeesArray.length} employee(s) is ${parseFloat(avgSalary)} `);
+  console.log (`The average employee salary between our ${employeesArray.length} employee(s) is ${avgSalary.toFixed(2)} `);
   
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  const idEmployee = Math.floor(Math.random() * employeesArray.length);
 
+  // Used the Math.floor function to select a random employee from the employees array.
+  const idEmployee = Math.floor(Math.random() * employeesArray.length);
+  const randomEmployee = employeesArray [idEmployee]
+  console.log (`Congratulations to ${randomEmployee.firstName} ${randomEmployee.lastName}, our random drawing winner`);
 }
 
 /*
