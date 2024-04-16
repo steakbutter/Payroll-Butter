@@ -16,7 +16,7 @@ Click the Add Employee button.
 Fill in the information with First name, Last name and Salary(using number values.)
 
 ![alt text](<assets/Images/payroll tracker example.png>)
-![alt text](<assets/Images/console log payrolll tracker.png>)
+![alt text](<assets/Images/Screenshot 2024-04-15 213406.png>)
 ## Credits
 
 "Ask BCS learning assistant" inside the slack app was of tremendous help for debugging some details on my code. 
